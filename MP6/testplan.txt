@@ -1,0 +1,238 @@
+Deeb Armaly
+ECE2230 
+MP6 Testplan
+
+/------------------------------------/
+
+The first unit driver added to the lab6.c file was -u 1. This driver shows how the code
+handles basic insertions and removes as well as inserting a duplicate based on 3a. in MP6 pdf. 
+The second unit driver -u 2 shows 3b. in MP6 pdf as well as boundary conditions such as inserting into full 
+table, inserting a duplicate key, deleting from an empty table, deleting a key not in the table, inserting
+when using a probe decrement and table size combination that does not cover all addresses.
+
+Below are the outputs of the two test drivers showing proper operation.
+
+/------------------------------------/
+Table size (11), load factor (0.9)
+Open addressing with linear probe sequence
+Seed: 11302021
+inserting keys 5, 12, 11, and 19 into table of size 7
+Printing table keys and positions
+(0, EMPTY)
+(1, EMPTY)
+(2, 19)
+(3, 11)
+(4, 12)
+(5, 5)
+(6, EMPTY)
+removing keys 5 and 12
+Printing table keys and positions
+(0, EMPTY)
+(1, EMPTY)
+(2, 19)
+(3, 11)
+(4, DEL)
+(5, DEL)
+(6, EMPTY)
+inserting keys 19 and 26
+Printing table keys and positions
+(0, EMPTY)
+(1, EMPTY)
+(2, 19)
+(3, 11)
+(4, DEL)
+(5, 26)
+(6, EMPTY)
+Table size (11), load factor (0.9)
+Open addressing with linear probe sequence
+Seed: 11302021
+inserting keys 7, 8, 9, 10, 11, and 12 into table of size 7
+Printing table keys and positions
+(0, 7)
+(1, EMPTY)
+(2, EMPTY)
+(3, EMPTY)
+(4, EMPTY)
+(5, EMPTY)
+(6, EMPTY)
+Printing table keys and positions
+(0, 7)
+(1, 8)
+(2, EMPTY)
+(3, EMPTY)
+(4, EMPTY)
+(5, EMPTY)
+(6, EMPTY)
+Printing table keys and positions
+(0, 7)
+(1, 8)
+(2, 9)
+(3, EMPTY)
+(4, EMPTY)
+(5, EMPTY)
+(6, EMPTY)
+Printing table keys and positions
+(0, 7)
+(1, 8)
+(2, 9)
+(3, 10)
+(4, EMPTY)
+(5, EMPTY)
+(6, EMPTY)
+Printing table keys and positions
+(0, 7)
+(1, 8)
+(2, 9)
+(3, 10)
+(4, 11)
+(5, EMPTY)
+(6, EMPTY)
+Printing table keys and positions
+(0, 7)
+(1, 8)
+(2, 9)
+(3, 10)
+(4, 11)
+(5, 12)
+(6, EMPTY)
+attempting to insert into a full table
+Printing table keys and positions
+(0, 7)
+(1, 8)
+(2, 9)
+(3, 10)
+(4, 11)
+(5, 12)
+(6, EMPTY)
+removing keys 7, 8, 9, 10, 11
+Printing table keys and positions
+(0, DEL)
+(1, 8)
+(2, 9)
+(3, 10)
+(4, 11)
+(5, 12)
+(6, EMPTY)
+Printing table keys and positions
+(0, DEL)
+(1, DEL)
+(2, 9)
+(3, 10)
+(4, 11)
+(5, 12)
+(6, EMPTY)
+Printing table keys and positions
+(0, DEL)
+(1, DEL)
+(2, DEL)
+(3, 10)
+(4, 11)
+(5, 12)
+(6, EMPTY)
+Printing table keys and positions
+(0, DEL)
+(1, DEL)
+(2, DEL)
+(3, DEL)
+(4, 11)
+(5, 12)
+(6, EMPTY)
+Printing table keys and positions
+(0, DEL)
+(1, DEL)
+(2, DEL)
+(3, DEL)
+(4, DEL)
+(5, 12)
+(6, EMPTY)
+inserting keys 13 and 14
+Printing table keys and positions
+(0, 14)
+(1, DEL)
+(2, DEL)
+(3, DEL)
+(4, DEL)
+(5, 12)
+(6, 13)
+attempting to delete key 22
+Printing table keys and positions
+(0, 14)
+(1, DEL)
+(2, DEL)
+(3, DEL)
+(4, DEL)
+(5, 12)
+(6, 13)
+attempting to delete from empty table
+Printing table keys and positions
+(0, DEL)
+(1, DEL)
+(2, DEL)
+(3, DEL)
+(4, DEL)
+(5, DEL)
+(6, DEL)
+Filling table again and trying to add extra key when table is full
+Printing table keys and positions
+(0, 7)
+(1, 8)
+(2, 9)
+(3, 10)
+(4, 11)
+(5, 12)
+(6, DEL)
+attempting to insert 12 again
+Printing table keys and positions
+(0, 7)
+(1, 8)
+(2, 9)
+(3, 10)
+(4, 11)
+(5, 12)
+(6, DEL)
+/------------------------------------/
+
+
+
+
+
+/------------------------------------/
+
+Below are the results showing how the code handles one table size that is 
+a small even number sized table with double hashing and a table that is not a power of two
+with quad hashing.
+
+/------------------------------------/
+
+Table size (6), load factor (0.9)
+Open addressing with double hashing
+Seed: 11302021
+
+----- Equilibrium test driver -----
+  Trials: 50000
+  Build table with 5 random keys
+    The average number of probes for a successful search = 1
+Table of size 6 is incompatible with the probe sequence
+
+Table size (11), load factor (0.9)
+Open addressing with quadratic probe sequence
+Seed: 11302021
+
+----- Equilibrium test driver -----
+  Trials: 50000
+  Build table with 9 random keys
+    The average number of probes for a successful search = 1.55556
+Table of size 11 is incompatible with the probe sequence
+
+/------------------------------------/
+
+
+
+
+
+/------------------------------------/
+
+When the code is run with valgrind for the -e, -b, and -r drivers, no memory leaks show 
+and it says no errors.
+
+/------------------------------------/

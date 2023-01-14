@@ -1,0 +1,1930 @@
+Added Drivers 
+-u 7 : This driver creates a tree with only one left node then deletes the root
+-u 8 : This driver creates a tree whose root has only a right link then deletes the root
+
+The outputs of the test script are shown below 
+
+Seed: 1142021
+
+----- Access driver -----
+  Access trials: 0
+  Levels for tree: 5
+  Build optimal tree with size=31
+Tree with 31 keys
+                       62
+                  60
+                       58
+             56
+                       54
+                  52
+                       50
+        48
+                       46
+                  44
+                       42
+             40
+                       38
+                  36
+                       34
+   32
+                       30
+                  28
+                       26
+             24
+                       22
+                  20
+                       18
+        16
+                       14
+                  12
+                       10
+              8
+                        6
+                   4
+                        2
+
+----- End of search driver -----
+
+Seed: 1
+
+----- Access driver -----
+  Access trials: 0
+  Levels for tree: 5
+  Build random tree with size=31
+Tree with 31 keys
+                  62
+                            60
+                       58
+                            56
+             54
+                       52
+                                 50
+                                      48
+                            46
+                                      44
+                                 42
+                  40
+                            38
+                       36
+                                 34
+                            32
+        30
+                  28
+             26
+                            24
+                       22
+                            20
+                                      18
+                                 16
+                                      14
+                  12
+                            10
+                        8
+                             6
+    4
+         2
+
+----- End of search driver -----
+
+Seed: 1
+
+----- Access driver -----
+  Access trials: 0
+  Levels for tree: 5
+  Build poor tree with size=31
+Tree with 31 keys
+             62
+                  60
+                       58
+                            56
+                                 54
+                                      52
+                                           50
+        48
+             46
+                       44
+                                 42
+                                           40
+                                      38
+                            36
+                  34
+   32
+             30
+                  28
+                       26
+                            24
+                                 22
+                                      20
+                                           18
+        16
+                                           14
+                                      12
+                                 10
+                             8
+                        6
+                   4
+              2
+
+----- End of search driver -----
+
+Seed: 1142021
+
+----- Access driver -----
+  Access trials: 100000
+  Levels for tree: 16
+  Build optimal tree with size=65535
+  After search exercise, time=33.276, tree size=65535
+    Expect successful search=29.0005, measured=29.0087, trials=49970
+    Expect unsuccessful search=32, measured=32, trials=50030
+----- End of search driver -----
+
+Seed: 1142021
+
+----- Access driver -----
+  Access trials: 100000
+  Levels for tree: 16
+  Build random tree with size=65535
+  After search exercise, time=35.836, tree size=65535
+    Expect successful search=39.0393, measured=38.9974, trials=50088
+    Expect unsuccessful search=42.0387, measured=41.9688, trials=49912
+----- End of search driver -----
+
+Seed: 1142021
+
+----- Access driver -----
+  Access trials: 100000
+  Levels for tree: 16
+  Build poor tree with size=65535
+  After search exercise, time=88.365, tree size=65535
+    Expect successful search=269.996, measured=270.198, trials=49975
+    Expect unsuccessful search=272.992, measured=272.133, trials=50025
+----- End of search driver -----
+
+Seed: 1142021
+
+
+ ====== Unit Driver ======
+
+Inserting 14 items into tree
+ -- Test (0) tree after adding key 32
+Tree with 1 keys
+   32
+
+ -- Test (1) tree after adding key 16
+Tree with 2 keys
+   32
+        16
+
+ -- Test (2) tree after adding key 8
+Tree with 3 keys
+   32
+        16
+              8
+
+ -- Test (3) tree after adding key 24
+Tree with 4 keys
+   32
+             24
+        16
+              8
+
+ -- Test (4) tree after adding key 4
+Tree with 5 keys
+   32
+             24
+        16
+              8
+                   4
+
+ -- Test (5) tree after adding key 12
+Tree with 6 keys
+   32
+             24
+        16
+                  12
+              8
+                   4
+
+ -- Test (6) tree after adding key 20
+Tree with 7 keys
+   32
+             24
+                  20
+        16
+                  12
+              8
+                   4
+
+ -- Test (7) tree after adding key 28
+Tree with 8 keys
+   32
+                  28
+             24
+                  20
+        16
+                  12
+              8
+                   4
+
+ -- Test (8) tree after adding key 48
+Tree with 9 keys
+        48
+   32
+                  28
+             24
+                  20
+        16
+                  12
+              8
+                   4
+
+ -- Test (9) tree after adding key 40
+Tree with 10 keys
+        48
+             40
+   32
+                  28
+             24
+                  20
+        16
+                  12
+              8
+                   4
+
+ -- Test (10) tree after adding key 56
+Tree with 11 keys
+             56
+        48
+             40
+   32
+                  28
+             24
+                  20
+        16
+                  12
+              8
+                   4
+
+ -- Test (11) tree after adding key 44
+Tree with 12 keys
+             56
+        48
+                  44
+             40
+   32
+                  28
+             24
+                  20
+        16
+                  12
+              8
+                   4
+
+ -- Test (12) tree after adding key 42
+Tree with 13 keys
+             56
+        48
+                  44
+                       42
+             40
+   32
+                  28
+             24
+                  20
+        16
+                  12
+              8
+                   4
+
+ -- Test (13) tree after adding key 46
+Tree with 14 keys
+             56
+        48
+                       46
+                  44
+                       42
+             40
+   32
+                  28
+             24
+                  20
+        16
+                  12
+              8
+                   4
+
+
+All insertions complete.
+Removing 7 items from tree
+ -- Test (0) about to remove key 12
+Tree with 13 keys
+             56
+        48
+                       46
+                  44
+                       42
+             40
+   32
+                  28
+             24
+                  20
+        16
+              8
+                   4
+
+ -- Test (1) about to remove key 20
+Tree with 12 keys
+             56
+        48
+                       46
+                  44
+                       42
+             40
+   32
+                  28
+             24
+        16
+              8
+                   4
+
+ -- Test (2) about to remove key 8
+Tree with 11 keys
+             56
+        48
+                       46
+                  44
+                       42
+             40
+   32
+                  28
+             24
+        16
+              4
+
+ -- Test (3) about to remove key 24
+Tree with 10 keys
+             56
+        48
+                       46
+                  44
+                       42
+             40
+   32
+             28
+        16
+              4
+
+ -- Test (4) about to remove key 40
+Tree with 9 keys
+             56
+        48
+                  46
+             44
+                  42
+   32
+             28
+        16
+              4
+
+ -- Test (5) about to remove key 16
+Tree with 8 keys
+             56
+        48
+                  46
+             44
+                  42
+   32
+             28
+         4
+
+ -- Test (6) about to remove key 48
+Tree with 7 keys
+             56
+        46
+             44
+                  42
+   32
+             28
+         4
+
+Seed: 1142021
+
+
+ ====== Unit Driver ======
+
+Inserting 13 items into tree
+ -- Test (0) tree after adding key 32
+Tree with 1 keys
+   32
+
+ -- Test (1) tree after adding key 16
+Tree with 2 keys
+   32
+        16
+
+ -- Test (2) tree after adding key 48
+Tree with 3 keys
+        48
+   32
+        16
+
+ -- Test (3) tree after adding key 8
+Tree with 4 keys
+        48
+   32
+        16
+              8
+
+ -- Test (4) tree after adding key 24
+Tree with 5 keys
+        48
+   32
+             24
+        16
+              8
+
+ -- Test (5) tree after adding key 40
+Tree with 6 keys
+        48
+             40
+   32
+             24
+        16
+              8
+
+ -- Test (6) tree after adding key 56
+Tree with 7 keys
+             56
+        48
+             40
+   32
+             24
+        16
+              8
+
+ -- Test (7) tree after adding key 4
+Tree with 8 keys
+             56
+        48
+             40
+   32
+             24
+        16
+              8
+                   4
+
+ -- Test (8) tree after adding key 20
+Tree with 9 keys
+             56
+        48
+             40
+   32
+             24
+                  20
+        16
+              8
+                   4
+
+ -- Test (9) tree after adding key 28
+Tree with 10 keys
+             56
+        48
+             40
+   32
+                  28
+             24
+                  20
+        16
+              8
+                   4
+
+ -- Test (10) tree after adding key 36
+Tree with 11 keys
+             56
+        48
+             40
+                  36
+   32
+                  28
+             24
+                  20
+        16
+              8
+                   4
+
+ -- Test (11) tree after adding key 44
+Tree with 12 keys
+             56
+        48
+                  44
+             40
+                  36
+   32
+                  28
+             24
+                  20
+        16
+              8
+                   4
+
+ -- Test (12) tree after adding key 60
+Tree with 13 keys
+                  60
+             56
+        48
+                  44
+             40
+                  36
+   32
+                  28
+             24
+                  20
+        16
+              8
+                   4
+
+
+All insertions complete.
+Removing 3 items from tree
+ -- Test (0) about to remove key 16
+Tree with 12 keys
+                  60
+             56
+        48
+                  44
+             40
+                  36
+   32
+                  28
+             24
+                  20
+         8
+              4
+
+ -- Test (1) about to remove key 48
+Tree with 11 keys
+                  60
+             56
+        44
+             40
+                  36
+   32
+                  28
+             24
+                  20
+         8
+              4
+
+ -- Test (2) about to remove key 32
+Tree with 10 keys
+                  60
+             56
+        44
+             40
+                  36
+   28
+             24
+                  20
+         8
+              4
+
+Seed: 1142021
+
+
+ ====== Unit Driver ======
+
+Inserting 13 items into tree
+ -- Test (0) tree after adding key 32
+Tree with 1 keys
+   32
+
+ -- Test (1) tree after adding key 16
+Tree with 2 keys
+   32
+        16
+
+ -- Test (2) tree after adding key 48
+Tree with 3 keys
+        48
+   32
+        16
+
+ -- Test (3) tree after adding key 8
+Tree with 4 keys
+        48
+   32
+        16
+              8
+
+ -- Test (4) tree after adding key 24
+Tree with 5 keys
+        48
+   32
+             24
+        16
+              8
+
+ -- Test (5) tree after adding key 40
+Tree with 6 keys
+        48
+             40
+   32
+             24
+        16
+              8
+
+ -- Test (6) tree after adding key 56
+Tree with 7 keys
+             56
+        48
+             40
+   32
+             24
+        16
+              8
+
+ -- Test (7) tree after adding key 4
+Tree with 8 keys
+             56
+        48
+             40
+   32
+             24
+        16
+              8
+                   4
+
+ -- Test (8) tree after adding key 12
+Tree with 9 keys
+             56
+        48
+             40
+   32
+             24
+        16
+                  12
+              8
+                   4
+
+ -- Test (9) tree after adding key 28
+Tree with 10 keys
+             56
+        48
+             40
+   32
+                  28
+             24
+        16
+                  12
+              8
+                   4
+
+ -- Test (10) tree after adding key 36
+Tree with 11 keys
+             56
+        48
+             40
+                  36
+   32
+                  28
+             24
+        16
+                  12
+              8
+                   4
+
+ -- Test (11) tree after adding key 52
+Tree with 12 keys
+             56
+                  52
+        48
+             40
+                  36
+   32
+                  28
+             24
+        16
+                  12
+              8
+                   4
+
+ -- Test (12) tree after adding key 60
+Tree with 13 keys
+                  60
+             56
+                  52
+        48
+             40
+                  36
+   32
+                  28
+             24
+        16
+                  12
+              8
+                   4
+
+
+All insertions complete.
+Removing 3 items from tree
+ -- Test (0) about to remove key 16
+Tree with 12 keys
+                  60
+             56
+                  52
+        48
+             40
+                  36
+   32
+                  28
+             24
+        12
+              8
+                   4
+
+ -- Test (1) about to remove key 48
+Tree with 11 keys
+                  60
+             56
+                  52
+        40
+             36
+   32
+                  28
+             24
+        12
+              8
+                   4
+
+ -- Test (2) about to remove key 32
+Tree with 10 keys
+                  60
+             56
+                  52
+        40
+             36
+   28
+             24
+        12
+              8
+                   4
+
+Seed: 1142021
+
+
+ ====== Unit Driver ======
+
+Inserting 16 items into tree
+ -- Test (0) tree after adding key 200
+Tree with 1 keys
+  200
+
+ -- Test (1) tree after adding key 100
+Tree with 2 keys
+  200
+       100
+
+ -- Test (2) tree after adding key 50
+Tree with 3 keys
+  200
+       100
+             50
+
+ -- Test (3) tree after adding key 150
+Tree with 4 keys
+  200
+            150
+       100
+             50
+
+ -- Test (4) tree after adding key 25
+Tree with 5 keys
+  200
+            150
+       100
+             50
+                  25
+
+ -- Test (5) tree after adding key 75
+Tree with 6 keys
+  200
+            150
+       100
+                  75
+             50
+                  25
+
+ -- Test (6) tree after adding key 125
+Tree with 7 keys
+  200
+            150
+                 125
+       100
+                  75
+             50
+                  25
+
+ -- Test (7) tree after adding key 175
+Tree with 8 keys
+  200
+                 175
+            150
+                 125
+       100
+                  75
+             50
+                  25
+
+ -- Test (8) tree after adding key 65
+Tree with 9 keys
+  200
+                 175
+            150
+                 125
+       100
+                  75
+                       65
+             50
+                  25
+
+ -- Test (9) tree after adding key 85
+Tree with 10 keys
+  200
+                 175
+            150
+                 125
+       100
+                       85
+                  75
+                       65
+             50
+                  25
+
+ -- Test (10) tree after adding key 135
+Tree with 11 keys
+  200
+                 175
+            150
+                      135
+                 125
+       100
+                       85
+                  75
+                       65
+             50
+                  25
+
+ -- Test (11) tree after adding key 80
+Tree with 12 keys
+  200
+                 175
+            150
+                      135
+                 125
+       100
+                       85
+                            80
+                  75
+                       65
+             50
+                  25
+
+ -- Test (12) tree after adding key 130
+Tree with 13 keys
+  200
+                 175
+            150
+                      135
+                           130
+                 125
+       100
+                       85
+                            80
+                  75
+                       65
+             50
+                  25
+
+ -- Test (13) tree after adding key 140
+Tree with 14 keys
+  200
+                 175
+            150
+                           140
+                      135
+                           130
+                 125
+       100
+                       85
+                            80
+                  75
+                       65
+             50
+                  25
+
+ -- Test (14) tree after adding key 78
+Tree with 15 keys
+  200
+                 175
+            150
+                           140
+                      135
+                           130
+                 125
+       100
+                       85
+                            80
+                                 78
+                  75
+                       65
+             50
+                  25
+
+ -- Test (15) tree after adding key 82
+Tree with 16 keys
+  200
+                 175
+            150
+                           140
+                      135
+                           130
+                 125
+       100
+                       85
+                                 82
+                            80
+                                 78
+                  75
+                       65
+             50
+                  25
+
+
+All insertions complete.
+Removing 3 items from tree
+ -- Test (0) about to remove key 100
+Tree with 15 keys
+  200
+                 175
+            150
+                           140
+                      135
+                           130
+                 125
+        85
+                            82
+                       80
+                            78
+                  75
+                       65
+             50
+                  25
+
+ -- Test (1) about to remove key 85
+Tree with 14 keys
+  200
+                 175
+            150
+                           140
+                      135
+                           130
+                 125
+        82
+                       80
+                            78
+                  75
+                       65
+             50
+                  25
+
+ -- Test (2) about to remove key 125
+Tree with 13 keys
+  200
+                 175
+            150
+                      140
+                 135
+                      130
+        82
+                       80
+                            78
+                  75
+                       65
+             50
+                  25
+
+Seed: 1142021
+
+
+ ====== Unit Driver ======
+
+Inserting 2 items into tree
+ -- Test (0) tree after adding key 10
+Tree with 1 keys
+   10
+
+ -- Test (1) tree after adding key 10
+Tree with 1 keys
+   10
+
+
+All insertions complete.
+Removing 1 items from tree
+ -- Test (0) about to remove key 10
+Tree with 0 keys
+
+Seed: 1142021
+
+
+ ====== Unit Driver ======
+
+Inserting 12 items into tree
+ -- Test (0) tree after adding key 14
+Tree with 1 keys
+   14
+
+ -- Test (1) tree after adding key 6
+Tree with 2 keys
+   14
+         6
+
+ -- Test (2) tree after adding key 20
+Tree with 3 keys
+        20
+   14
+         6
+
+ -- Test (3) tree after adding key 12
+Tree with 4 keys
+        20
+   14
+             12
+         6
+
+ -- Test (4) tree after adding key 1
+Tree with 5 keys
+        20
+   14
+             12
+         6
+              1
+
+ -- Test (5) tree after adding key 5
+Tree with 6 keys
+        20
+   14
+             12
+         6
+                   5
+              1
+
+ -- Test (6) tree after adding key 4
+Tree with 7 keys
+        20
+   14
+             12
+         6
+                   5
+                        4
+              1
+
+ -- Test (7) tree after adding key 22
+Tree with 8 keys
+             22
+        20
+   14
+             12
+         6
+                   5
+                        4
+              1
+
+ -- Test (8) tree after adding key 24
+Tree with 9 keys
+                  24
+             22
+        20
+   14
+             12
+         6
+                   5
+                        4
+              1
+
+ -- Test (9) tree after adding key 26
+Tree with 10 keys
+                       26
+                  24
+             22
+        20
+   14
+             12
+         6
+                   5
+                        4
+              1
+
+ -- Test (10) tree after adding key 28
+Tree with 11 keys
+                            28
+                       26
+                  24
+             22
+        20
+   14
+             12
+         6
+                   5
+                        4
+              1
+
+ -- Test (11) tree after adding key 30
+Tree with 12 keys
+                                 30
+                            28
+                       26
+                  24
+             22
+        20
+   14
+             12
+         6
+                   5
+                        4
+              1
+
+
+All insertions complete.
+Removing 1 items from tree
+ -- Test (0) about to remove key 10
+Tree with 12 keys
+                                 30
+                            28
+                       26
+                  24
+             22
+        20
+   14
+             12
+         6
+                   5
+                        4
+              1
+
+
+
+FAILED to find the key in the tree ######
+Seed: 1142021
+
+
+ ====== Unit Driver ======
+
+Inserting 17 items into tree
+ -- Test (0) tree after adding key 10
+Tree with 1 keys
+   10
+
+ -- Test (1) tree after adding key 8
+Tree with 2 keys
+   10
+         8
+
+ -- Test (2) tree after adding key 26
+Tree with 3 keys
+        26
+   10
+         8
+
+ -- Test (3) tree after adding key 6
+Tree with 4 keys
+        26
+   10
+         8
+              6
+
+ -- Test (4) tree after adding key 14
+Tree with 5 keys
+        26
+             14
+   10
+         8
+              6
+
+ -- Test (5) tree after adding key 28
+Tree with 6 keys
+             28
+        26
+             14
+   10
+         8
+              6
+
+ -- Test (6) tree after adding key 4
+Tree with 7 keys
+             28
+        26
+             14
+   10
+         8
+              6
+                   4
+
+ -- Test (7) tree after adding key 20
+Tree with 8 keys
+             28
+        26
+                  20
+             14
+   10
+         8
+              6
+                   4
+
+ -- Test (8) tree after adding key 30
+Tree with 9 keys
+                  30
+             28
+        26
+                  20
+             14
+   10
+         8
+              6
+                   4
+
+ -- Test (9) tree after adding key 2
+Tree with 10 keys
+                  30
+             28
+        26
+                  20
+             14
+   10
+         8
+              6
+                   4
+                        2
+
+ -- Test (10) tree after adding key 32
+Tree with 11 keys
+                       32
+                  30
+             28
+        26
+                  20
+             14
+   10
+         8
+              6
+                   4
+                        2
+
+ -- Test (11) tree after adding key 16
+Tree with 12 keys
+                       32
+                  30
+             28
+        26
+                  20
+                       16
+             14
+   10
+         8
+              6
+                   4
+                        2
+
+ -- Test (12) tree after adding key 18
+Tree with 13 keys
+                       32
+                  30
+             28
+        26
+                  20
+                            18
+                       16
+             14
+   10
+         8
+              6
+                   4
+                        2
+
+ -- Test (13) tree after adding key 12
+Tree with 14 keys
+                       32
+                  30
+             28
+        26
+                  20
+                            18
+                       16
+             14
+                  12
+   10
+         8
+              6
+                   4
+                        2
+
+ -- Test (14) tree after adding key 22
+Tree with 15 keys
+                       32
+                  30
+             28
+        26
+                       22
+                  20
+                            18
+                       16
+             14
+                  12
+   10
+         8
+              6
+                   4
+                        2
+
+ -- Test (15) tree after adding key 24
+Tree with 16 keys
+                       32
+                  30
+             28
+        26
+                            24
+                       22
+                  20
+                            18
+                       16
+             14
+                  12
+   10
+         8
+              6
+                   4
+                        2
+
+ -- Test (16) tree after adding key 34
+Tree with 17 keys
+                            34
+                       32
+                  30
+             28
+        26
+                            24
+                       22
+                  20
+                            18
+                       16
+             14
+                  12
+   10
+         8
+              6
+                   4
+                        2
+
+
+All insertions complete.
+Removing 1 items from tree
+ -- Test (0) about to remove key 10
+Tree with 16 keys
+                            34
+                       32
+                  30
+             28
+        26
+                            24
+                       22
+                  20
+                            18
+                       16
+             14
+                  12
+    8
+         6
+              4
+                   2
+
+Seed: 1142021
+
+
+ ====== Unit Driver ======
+
+Inserting 5 items into tree
+ -- Test (0) tree after adding key 10
+Tree with 1 keys
+   10
+
+ -- Test (1) tree after adding key 8
+Tree with 2 keys
+   10
+         8
+
+ -- Test (2) tree after adding key 26
+Tree with 3 keys
+        26
+   10
+         8
+
+ -- Test (3) tree after adding key 23
+Tree with 4 keys
+        26
+             23
+   10
+         8
+
+ -- Test (4) tree after adding key 60
+Tree with 5 keys
+             60
+        26
+             23
+   10
+         8
+
+
+All insertions complete.
+Removing 1 items from tree
+ -- Test (0) about to remove key 10
+Tree with 4 keys
+             60
+        26
+             23
+    8
+
+Seed: 1142021
+
+
+ ====== Unit Driver ======
+
+Inserting 5 items into tree
+ -- Test (0) tree after adding key 10
+Tree with 1 keys
+   10
+
+ -- Test (1) tree after adding key 26
+Tree with 2 keys
+        26
+   10
+
+ -- Test (2) tree after adding key 15
+Tree with 3 keys
+        26
+             15
+   10
+
+ -- Test (3) tree after adding key 34
+Tree with 4 keys
+             34
+        26
+             15
+   10
+
+ -- Test (4) tree after adding key 22
+Tree with 5 keys
+             34
+        26
+                  22
+             15
+   10
+
+
+All insertions complete.
+Removing 1 items from tree
+ -- Test (0) about to remove key 10
+Tree with 4 keys
+        34
+   26
+             22
+        15
+
+Seed: 2
+
+----- Equilibrium test driver -----
+  Trials in equilibrium: 10
+  Levels in initial tree: 5
+  Initial random tree size=31
+  Expect successful search for initial tree=9.32258
+  Expect unsuccessful search for initial tree=11.9375
+Tree with 31 keys
+        62
+             60
+   58
+                            56
+                       54
+                  52
+                            50
+                       48
+                                 46
+                            44
+                                 42
+                                      40
+             38
+                            36
+                                 34
+                       32
+                                      30
+                                 28
+                            26
+                                 24
+                  22
+                            20
+                       18
+                                 16
+                            14
+        12
+                  10
+                        8
+              6
+                        4
+                   2
+
+Trial 0, Key 2 replaced
+Tree with 31 keys
+        62
+             60
+   58
+                            56
+                       54
+                  52
+                            50
+                       48
+                                 46
+                            44
+                                 42
+                                      40
+             38
+                            36
+                                 34
+                       32
+                                      30
+                                 28
+                            26
+                                 24
+                  22
+                            20
+                       18
+                                 16
+                            14
+        12
+                  10
+                        8
+              6
+                        4
+                   2
+
+Trial 1, Key 58 replaced
+Tree with 31 keys
+        62
+             60
+   58
+                            56
+                       54
+                  52
+                            50
+                       48
+                                 46
+                            44
+                                 42
+                                      40
+             38
+                            36
+                                 34
+                       32
+                                      30
+                                 28
+                            26
+                                 24
+                  22
+                            20
+                       18
+                                 16
+                            14
+        12
+                  10
+                        8
+              6
+                        4
+                   2
+
+Trial 2, Key 53 added
+Tree with 32 keys
+        62
+             60
+   58
+                            56
+                       54
+                            53
+                  52
+                            50
+                       48
+                                 46
+                            44
+                                 42
+                                      40
+             38
+                            36
+                                 34
+                       32
+                                      30
+                                 28
+                            26
+                                 24
+                  22
+                            20
+                       18
+                                 16
+                            14
+        12
+                  10
+                        8
+              6
+                        4
+                   2
+
+Trial 3, Key 23 added
+Tree with 33 keys
+        62
+             60
+   58
+                            56
+                       54
+                            53
+                  52
+                            50
+                       48
+                                 46
+                            44
+                                 42
+                                      40
+             38
+                            36
+                                 34
+                       32
+                                      30
+                                 28
+                            26
+                                 24
+                                      23
+                  22
+                            20
+                       18
+                                 16
+                            14
+        12
+                  10
+                        8
+              6
+                        4
+                   2
+
+Trial 4, Key 9 added
+Tree with 34 keys
+        62
+             60
+   58
+                            56
+                       54
+                            53
+                  52
+                            50
+                       48
+                                 46
+                            44
+                                 42
+                                      40
+             38
+                            36
+                                 34
+                       32
+                                      30
+                                 28
+                            26
+                                 24
+                                      23
+                  22
+                            20
+                       18
+                                 16
+                            14
+        12
+                  10
+                             9
+                        8
+              6
+                        4
+                   2
+
+Trial 5, Key 9 replaced
+Tree with 34 keys
+        62
+             60
+   58
+                            56
+                       54
+                            53
+                  52
+                            50
+                       48
+                                 46
+                            44
+                                 42
+                                      40
+             38
+                            36
+                                 34
+                       32
+                                      30
+                                 28
+                            26
+                                 24
+                                      23
+                  22
+                            20
+                       18
+                                 16
+                            14
+        12
+                  10
+                             9
+                        8
+              6
+                        4
+                   2
+
+Trial 6, Key 40 replaced
+Tree with 34 keys
+        62
+             60
+   58
+                            56
+                       54
+                            53
+                  52
+                            50
+                       48
+                                 46
+                            44
+                                 42
+                                      40
+             38
+                            36
+                                 34
+                       32
+                                      30
+                                 28
+                            26
+                                 24
+                                      23
+                  22
+                            20
+                       18
+                                 16
+                            14
+        12
+                  10
+                             9
+                        8
+              6
+                        4
+                   2
+
+Trial 7, Key 41 added
+Tree with 35 keys
+        62
+             60
+   58
+                            56
+                       54
+                            53
+                  52
+                            50
+                       48
+                                 46
+                            44
+                                 42
+                                           41
+                                      40
+             38
+                            36
+                                 34
+                       32
+                                      30
+                                 28
+                            26
+                                 24
+                                      23
+                  22
+                            20
+                       18
+                                 16
+                            14
+        12
+                  10
+                             9
+                        8
+              6
+                        4
+                   2
+
+Trial 8, Key 55 not found
+Tree with 35 keys
+        62
+             60
+   58
+                            56
+                       54
+                            53
+                  52
+                            50
+                       48
+                                 46
+                            44
+                                 42
+                                           41
+                                      40
+             38
+                            36
+                                 34
+                       32
+                                      30
+                                 28
+                            26
+                                 24
+                                      23
+                  22
+                            20
+                       18
+                                 16
+                            14
+        12
+                  10
+                             9
+                        8
+              6
+                        4
+                   2
+
+Trial 9, Key 48 removed
+Tree with 34 keys
+        62
+             60
+   58
+                            56
+                       54
+                            53
+                  52
+                            50
+                       46
+                            44
+                                 42
+                                           41
+                                      40
+             38
+                            36
+                                 34
+                       32
+                                      30
+                                 28
+                            26
+                                 24
+                                      23
+                  22
+                            20
+                       18
+                                 16
+                            14
+        12
+                  10
+                             9
+                        8
+              6
+                        4
+                   2
+
+  After exercise, time=0.086, new tree size=34
+  successful searches during exercise=8.6, trials=5
+  unsuccessful searches during exercise=12.4, trials=5
+  Validating tree...passed
+  After search experiment, time=0.002, tree size=34
+  Expect successful search=9.70588, measured=11.5, trials=4
+  Expect unsuccessful search=12.3429, measured=13, trials=6
+----- End of equilibrium test -----
+
+Seed: 1142021
+
+----- Equilibrium test driver -----
+  Trials in equilibrium: 100000
+  Levels in initial tree: 20
+  Initial random tree size=1048575
+  Expect successful search for initial tree=49.9882
+  Expect unsuccessful search for initial tree=52.9881
+  After exercise, time=115.312, new tree size=1048602
+  successful searches during exercise=50.0808, trials=50052
+  unsuccessful searches during exercise=52.9101, trials=49948
+  Validating tree...passed
+  After search experiment, time=114.818, tree size=1048602
+  Expect successful search=49.9759, measured=49.9849, trials=49915
+  Expect unsuccessful search=52.9758, measured=52.826, trials=50085
+----- End of equilibrium test -----
+

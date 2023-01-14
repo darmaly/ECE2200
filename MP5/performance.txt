@@ -1,0 +1,124 @@
+
+Below are the performances of the trees.
+The first group of three are done with optimal trees.
+The next three are done with random trees.
+And the final three are done with poor trees.
+
+No matter the tree shape the expected search results were very very close to the actual search results.
+In the optimal tree the expected unsuccessful searches matched the measured searches exactly.
+
+As for the timing, it can be seen that the tree sizes grow exponentially yet the search times do not.
+The search times increase at a rate of roughly O(log n), which is what we expect for binary search trees.
+Even for the worst case trees the search time does not increase at the same rate as the size. 
+The worst case tree search time grows at some rate X*log(n) but since the scaling factor is not 
+really important we can still say the search is O(log n) complexity.
+
+
+Seed: 1142021
+
+----- Access driver -----
+  Access trials: 100000
+  Levels for tree: 5
+  Build optimal tree with size=31
+  After search exercise, time=7.369, tree size=31
+    Expect successful search=7.32258, measured=7.32938, trials=49408
+    Expect unsuccessful search=10, measured=10, trials=50592
+----- End of search driver -----
+
+Seed: 1142021
+
+----- Access driver -----
+  Access trials: 100000
+  Levels for tree: 10
+  Build optimal tree with size=1023
+  After search exercise, time=9.712, tree size=1023
+    Expect successful search=17.0196, measured=17.0214, trials=50083
+    Expect unsuccessful search=20, measured=20, trials=49917
+----- End of search driver -----
+
+Seed: 1142021
+
+----- Access driver -----
+  Access trials: 100000
+  Levels for tree: 15
+  Build optimal tree with size=32767
+  After search exercise, time=24.12, tree size=32767
+    Expect successful search=27.0009, measured=27.0225, trials=49969
+    Expect unsuccessful search=30, measured=30, trials=50031
+----- End of search driver -----
+
+
+
+
+
+Seed: 1142021
+
+----- Access driver -----
+  Access trials: 100000
+  Levels for tree: 5
+  Build random tree with size=31
+  After search exercise, time=5.787, tree size=31
+    Expect successful search=9.19355, measured=9.18438, trials=49408
+    Expect unsuccessful search=11.8125, measured=11.8265, trials=50592
+----- End of search driver -----
+
+Seed: 1142021
+
+----- Access driver -----
+  Access trials: 100000
+  Levels for tree: 10
+  Build random tree with size=1023
+  After search exercise, time=12.461, tree size=1023
+    Expect successful search=22.1711, measured=22.1695, trials=50088
+    Expect unsuccessful search=25.1465, measured=25.1263, trials=49912
+----- End of search driver -----
+
+Seed: 1142021
+
+----- Access driver -----
+  Access trials: 100000
+  Levels for tree: 15
+  Build random tree with size=32767
+  After search exercise, time=25.709, tree size=32767
+    Expect successful search=36.5339, measured=36.5672, trials=49859
+    Expect unsuccessful search=39.5327, measured=39.5038, trials=50141
+----- End of search driver -----
+
+
+
+
+
+
+Seed: 1142021
+
+----- Access driver -----
+  Access trials: 100000
+  Levels for tree: 5
+  Build poor tree with size=31
+  After search exercise, time=5.876, tree size=31
+    Expect successful search=10.1613, measured=10.1297, trials=49408
+    Expect unsuccessful search=12.75, measured=12.7355, trials=50592
+----- End of search driver -----
+
+Seed: 1142021
+
+----- Access driver -----
+  Access trials: 100000
+  Levels for tree: 10
+  Build poor tree with size=1023
+  After search exercise, time=16.566, tree size=1023
+    Expect successful search=39.9795, measured=39.9006, trials=50084
+    Expect unsuccessful search=42.9375, measured=42.9282, trials=49916
+----- End of search driver -----
+
+Seed: 1142021
+
+----- Access driver -----
+  Access trials: 100000
+  Levels for tree: 15
+  Build poor tree with size=32767
+  After search exercise, time=76.267, tree size=32767
+    Expect successful search=268, measured=268.064, trials=49982
+    Expect unsuccessful search=270.992, measured=270.613, trials=50018
+----- End of search driver -----
+
